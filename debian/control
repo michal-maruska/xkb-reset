@@ -1,0 +1,12 @@
+Source: xkb-reset
+Section: x11
+Priority: extra
+Maintainer: Michal Maruska <michal@ruska.it>
+Build-Depends: cdbs, debhelper (>= 5), libx11-dev
+Standards-Version: 3.7.2
+
+Package: xkb-reset
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libx11-6
+Description: command to reset the X keyboard state (shift, group, mouse emulation)
+ 

@@ -1,0 +1,12 @@
+xkb-reset (1.1) lucid; urgency=low
+
+  * submitting for PPA
+
+ -- Michal Maruska <mmaruska@gmail.com>  Wed, 21 Jul 2010 16:45:14 +0300
+
+xkb-reset (1-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Michal Maruska <michal@ruska.it>  Tue, 11 Dec 2007 13:55:51 +0100
+

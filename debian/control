@@ -1,8 +1,8 @@
 Source: xkb-reset
 Section: x11
 Priority: extra
-Maintainer: Michal Maruska <michal@ruska.it>
-Build-Depends: debhelper (>= 7), libx11-dev
+Maintainer: Michal Maruska <mmaruska@gmail.com>
+Build-Depends: debhelper (>= 11), libx11-dev
 Standards-Version: 3.7.2
 
 Package: xkb-reset

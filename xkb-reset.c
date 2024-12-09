@@ -1,6 +1,6 @@
 /*  cc -L /usr/X11R6/lib   -lX11 xkb-reset.c -o xkb-reset  */
 #include <X11/Xlib.h>
-#include <X11/extensions/XKB.h>
+#include <X11/XKBlib.h>
 
 #include <stdlib.h>
 #include <stdio.h>

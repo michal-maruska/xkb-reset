@@ -7,18 +7,19 @@
 
 // todo: switch off mouse-emulation!
 
-main ()
+int main ()
 {
-        Display* dpy= XOpenDisplay(NULL);
-        if (! dpy){
-                perror("XOpenDisplay failed\n");
-                exit(-1);
-        }
-        
-        XkbLockModifiers(dpy, XkbUseCoreKbd, 255, 0);
+  Display* dpy= XOpenDisplay(NULL);
+  if (! dpy){
+    perror("XOpenDisplay failed\n");
+    exit(-1);
+  }
 
-        XkbLockGroup(dpy, XkbUseCoreKbd, XkbGroup1Index);
+  XkbLockModifiers(dpy, XkbUseCoreKbd, 255, 0);
 
-        XCloseDisplay(dpy);
-        exit(0);
+  XkbLockGroup(dpy, XkbUseCoreKbd, XkbGroup1Index);
+
+  XCloseDisplay(dpy);
+
+  return 0;
 }

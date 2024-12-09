@@ -2,7 +2,8 @@
 #include <X11/Xlib.h>
 #include <X11/extensions/XKB.h>
 
- #include <stdlib.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 
 // todo: switch off mouse-emulation!

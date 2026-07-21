@@ -4,7 +4,22 @@ on:
   push:
     tags:
       - 'sid/*'
+      - 'unstable/*'
+
   workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch, tag or SHA to build'
+        type: string
+        default: 'main'
+
+      architectures:
+        type: choice
+        options:
+          - '["amd64"]'
+          - '["arm64"]'
+          - '["amd64","arm64"]'
+        default: '["amd64"]'
 
 permissions:
   contents: write
@@ -14,4 +29,6 @@ jobs:
   publish:
     uses: michal-maruska/workflows/.github/workflows/build-and-publish-deb.yml@main
     with:
-      apt_repo: michal-maruska/apt-repo
+      ref: ${{ inputs.ref || github.ref }}
+      architectures: ${{ inputs.architectures || vars.DEFAULT_ARCHITECTURES || '["amd64","arm64"]' }}
+    secrets: inherit

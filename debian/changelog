@@ -1,3 +1,10 @@
+xkb-reset (1.1.6) unstable; urgency=medium
+
+  * ci: build & release on github
+  * ci: build for arm64, given REF,  and unstable/ tags
+
+ -- Michal Maruska <mmaruska@gmail.com>  Tue, 21 Jul 2026 16:08:06 +0200
+
 xkb-reset (1.1.5) unstable; urgency=medium
 
   * improve main()
